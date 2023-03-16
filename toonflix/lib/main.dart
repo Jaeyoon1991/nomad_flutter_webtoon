@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
 
+class Player {
+  String name;
+  Player({required this.name});
+}
+
+/**
+ * ?를 붙이면 반드시 초기화 해 줄 필요가 없다.
+ */
+class Coach {
+  String? name;
+  Coach();
+}
+
 void main() {
+  var player = Player(name: "jaeyoon");
   runApp(App());
 }
 
